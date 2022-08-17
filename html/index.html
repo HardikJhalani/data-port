@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Your Details</title>
+</head>
+
+<body>
+    <div class="index">
+        <header class="index-header">
+            <h2>DATA-PORT</h2>
+            <h3>Hardik Jhalani</h3>
+        </header>
+
+        <div class="index-main-section">
+            <div class="index-main">
+                <form action="#">
+                    <input type="number" placeholder="Semester">
+                    <input type="text" placeholder="Session">
+                    <h3>Achievements</h3>
+                    <div class="fields">
+                        <div class="national">
+                            <div class="l1">
+                                <input type="checkbox" id="national" onclick="Check1()">
+                                <label for="national">National</label>
+                            </div>
+                            <div class="checked_national" style="display: none;">
+                                <div class="l2">
+                                    <input type="checkbox" id="academics_national" onclick="check4()">
+                                    <label for="academics_national">Academics</label>
+                                    <input type="file" class="file_academics_national">
+                                </div>
+                                <div class="l2">
+                                    <input type="checkbox" id="spCu_national" onclick="check5()">
+                                    <label for="spCu_national">Sports/Cultural</label>
+                                    <input type="file" class="file_spCu_national">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="international">
+                            <div class="l1">
+                                <input type="checkbox" id="international" onclick="Check2()">
+                                <label for="international">International</label>
+                            </div>
+                            <div class="checked_international" style="display: none;">
+                                <div class="l2">
+                                    <input type="checkbox" id="academics_international" onclick="check6()">
+                                    <label for="academics_international">Academics</label>
+                                    <input type="file" class="file_academics_international">
+                                </div>
+                                <div class="l2">
+                                    <input type="checkbox" id="spCu_international" onclick="check7()">
+                                    <label for="spCu_international">Sports/Cultural</label>
+                                    <input type="file" class="file_spCu_international">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="local">
+                            <div class="l1">
+                                <input type="checkbox" id="local" onclick="Check3()">
+                                <label for="local">Local</label>
+                            </div>
+                            <div class="checked_local" style="display: none;">
+                                <div class="l2">
+                                    <input type="checkbox" id="academics_local" onclick="check8()">
+                                    <label for="academics_local">Academics</label>
+                                    <input type="file" class="file_academics_local">
+                                </div>
+                                <div class="l2">
+                                    <input type="checkbox" id="spCu_local" onclick="check9()">
+                                    <label for="spCu_local">Sports/Cultural</label>
+                                    <input type="file" class="file_spCu_local">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Internship / Apprenticeship</h3>
+                    <div class="internship">
+                        <input type="text" placeholder="Company / Organisation">
+                        <input type="file" class="file_intern">
+                    </div>
+                    <button class="btn btn-submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
