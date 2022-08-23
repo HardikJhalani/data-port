@@ -19,22 +19,47 @@
 
         <div class="sign-section">
             <div class="signup">
-                <div class="inputs">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="RTU Roll Number">
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Aadhar Number">
-                    <input type="text" placeholder="Contact Number">
-                    <input type="password" placeholder="Password">
-                    <input type="password" placeholder="Confirm Password">
-                </div>
-                <button class="btn btn-signnow" onclick="location.href = './index.html'">Sign Up</button>
-                <span>Already a user? <a href="./login.html"> Log In</a></span>
+                <form action="index.html" name="signUpForm" onsubmit="return formValidateSignUp()" method="post">
+                    <div class="inputs">
+                        <div>
+                            <input type="text" placeholder="Name" name="name" required>
+                            <div class="formerror" id="name"></div>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="RTU Roll Number" name="rturn">
+                            <div class="formerror" id="rturn"></div>
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Email" name="email">
+                            <div class="formerror" id="email"></div>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Aadhar Number" name="aadhaar">
+                            <div class="formerror" id="aadhaar"></div>
+                        </div>
+                        <div>
+                            <input type="tel" placeholder="Contact Number" name="contact">
+                            <div class="formerror" id="contact"></div>
+                        </div>
+                        <div>
+                            <input type="password" placeholder="Password" name="pass">
+                            <div class="formerror" id="pass"></div>
+                        </div>
+                        <div>
+                            <input type="password" placeholder="Confirm Password" name="cpass">
+                            <div class="formerror" id="cpass"></div>
+                        </div>
+                    </div>
+                    <button class="btn btn-signnow" type="submit" value="Sign Up">Sign Up</button>
+                    <span>Already a user? <a href="./login.html"> Log In</a></span>
+                </form>
 
             </div>
         </div>
 
     </div>
+
+    <script src="../js/form_validation.js"></script>
 </body>
 
 </html>

@@ -17,14 +17,29 @@
             </div>
         </header>
         <div class="login-section">
-            <div class="login">
-                <input type="text" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <button class="btn log-btn" onclick="location.href = './index.html'">Login</button>
-                <span>Not registered yet? <a href="./signup.html"> Sign Up</a></span>
-            </div>
+            <form action="index.html" name="loginForm" onsubmit="return validateLogin()" method="post">
+                <div class="login">
+                    <div>
+                        <input type="text" placeholder="Email" name="email">
+                        <div class="formerror" id="email"></div>
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Password" name="password">
+                        <div class="formerror" id="password"></div>
+                    </div>
+                    <button class="btn log-btn" type="submit">Login</button>
+                    <span>Not registered yet? <a href="./signup.html"> Sign Up</a></span>
+                </div>
+            </form>
         </div>
     </div>
 </body>
+
+<script src="../js/form_validation.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+    integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </html>

@@ -186,7 +186,8 @@ input {
 input[type="text"],
 input[type="password"],
 input[type="number"],
-input[type="email"] {
+input[type="email"],
+input[type="tel"] {
     min-width: 280px;
     height: 40px;
     border-radius: 4px;
@@ -230,7 +231,7 @@ input[type="email"] {
     align-items: center;
 }
 
-.signup {
+.signup form {
     max-width: 670px;
     display: flex;
     flex-direction: column;
@@ -246,6 +247,12 @@ input[type="email"] {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.formerror {
+    height: 10px;
+    font-size: 12px;
+    color: red;
 }
 
 @media (min-width: 768px) {
